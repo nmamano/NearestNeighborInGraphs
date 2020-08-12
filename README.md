@@ -1,9 +1,12 @@
-# NearestNeighborInGraphs
+# Nearest Neighbor In Graphs
 
-Implementation of a reactive nearest neighbor data structure for graphs based on separator hierarchies
-The data structure maintains a subset of the nodes of the graph, called sites, and allow the following operations:
-- Queries: given any node, return the closest site to that node
-- Updates: add or remove a site from the set of sites
+Implementation for the paper [Reactive Proximity Data Structures for Graphs](https://arxiv.org/pdf/1803.04555.pdf)
 
-The data structure is called reactive because it allows to turn on or off nodes as sites.
+This project considers the classic question of finding nearest neighbors in a graph-based setting.
+It implements a data structure that maintains a subset of the nodes of a graph, called sites, and allow the following operations:
+- Updates: add or remove a node from the set of sites.
+- Queries: given a query node, return the closest site to the query node.
+
+The data structure is based on a [separator hierarchy](https://en.wikipedia.org/wiki/Planar_separator_theorem).
+
 
